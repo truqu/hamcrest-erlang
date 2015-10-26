@@ -13,5 +13,4 @@ erl_crash.dump
 test/logs/
 ebin/*.beam
 logs/*
-include/hamcrest.hrl
 qc.hrl
