@@ -4,11 +4,10 @@
 all: clean test
 
 clean:
-	@(./rebar clean)
+	rebar3 clean
 
 build:
-	@(./rebar compile xref)
+	rebar3 compile xref
 
 test: build
-	@(./rebar -C test.config get-deps compile)
-	@(./rebar -C test.config skip_deps=true ct)
+	rebar3 ct

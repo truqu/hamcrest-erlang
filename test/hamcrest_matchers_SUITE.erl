@@ -30,7 +30,7 @@
 -module(hamcrest_matchers_SUITE).
 
 -include_lib("common_test/include/ct.hrl").
--include("qc.hrl").
+-include_lib("proper/include/proper.hrl").
 -include("../include/hamcrest.hrl").
 
 -compile(export_all).
